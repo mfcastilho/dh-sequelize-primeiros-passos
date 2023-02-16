@@ -1,5 +1,3 @@
-# dh-sequelize-primeiros-passos
-
 
 <h1 align="center">DH SEQUELIZE - PRIMEIROS PASSOS </h1>
 
@@ -17,15 +15,15 @@ MySQL.
 > - [ ] Criar model para a tabela de Movies.
 > - [ ] Criar um model para a tabela Genres.
 > - [ ] Criar um model para a tabela de Actors.
-> - [ ] Adicione ao model do Actor, o método getNameComplete.
+> - [X] Adicione ao model do Actor, o método getNameComplete.
 >> - Para mais informações consulte: https://sequelize.org/master/manual/models-definition.html#defining-as-part-of-the-model-opt
 
 - Acesso ao banco de dados:
-> - [ ] Criar o caminho /actors, que chamará o método ActorsController@index, e
+> - [X] Criar o caminho /actors, que chamará o método ActorsController@index, e
 devolver a view actors.ejs.
-> - [ ] Na view recém-criada, digite um título e digite localhost:3000/actors e verifique se
+> - [X] Na view recém-criada, digite um título e digite localhost:3000/actors e verifique se
 ele é exibido corretamente.
-> - [ ] No controller recém-criado, usando Sequelize, obtenha todos os atores dentro de
+> - [X] No controller recém-criado, usando Sequelize, obtenha todos os atores dentro de
 uma variável de actors e envie-a para a view. (É recomendável usar o método
 findAll.
 > - [ ] Na view dos actors/index.ejs, exibir uma lista de nomes de atores usando o EJS.
