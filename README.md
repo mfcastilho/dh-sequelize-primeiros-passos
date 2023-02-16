@@ -26,8 +26,8 @@ ele é exibido corretamente.
 > - [X] No controller recém-criado, usando Sequelize, obtenha todos os atores dentro de
 uma variável de actors e envie-a para a view. (É recomendável usar o método
 findAll.
-> - [ ] Na view dos actors/index.ejs, exibir uma lista de nomes de atores usando o EJS.
-> - [ ] Criar a rota /actors/:id, que será redirecionada para o método
+> - [X] Na view dos actors/index.ejs, exibir uma lista de nomes de atores usando o EJS.
+> - [X] Criar a rota /actors/:id, que será redirecionada para o método
 ActorsController@show, e retornar a view actors/show.ejs.
 > - [ ] No ActorsController, utilizando Sequelize, obtemos o ator com base na ID que
 recebemos por URL. Salvar o ator na variável actor, e enviá-la a view. (É
