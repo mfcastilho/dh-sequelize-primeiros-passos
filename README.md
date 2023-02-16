@@ -29,7 +29,7 @@ findAll.
 > - [X] Na view dos actors/index.ejs, exibir uma lista de nomes de atores usando o EJS.
 > - [X] Criar a rota /actors/:id, que será redirecionada para o método
 ActorsController@show, e retornar a view actors/show.ejs.
-> - [ ] No ActorsController, utilizando Sequelize, obtemos o ator com base na ID que
+> - [X] No ActorsController, utilizando Sequelize, obtemos o ator com base na ID que
 recebemos por URL. Salvar o ator na variável actor, e enviá-la a view. (É
 recomendável usar o método findByPk).
 > - [ ] Na visão de actors/show.ejs, usando EJS, exibir todos os dados do ator.
