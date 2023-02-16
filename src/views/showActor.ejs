@@ -11,16 +11,8 @@
     <h1><%= title %></h1>
     <h3 style="margin-bottom: 20px;">Bem vindos a <%= title %></h3>
     
-    <% if(typeof actors != "undefined"){ %>
-      <div style="margin-left: 1%;">
-        <ul>
-          <% actors.forEach(actor =>{ %>
-            <li>
-              <%= actor.name%>
-            </li>
-          <% }) %> 
-        </ul>
-      </div>
+    <% if(typeof actor != "undefined"){ %>
+         <h3><%= actor.name %> </h3>
     <% } %> 
    
   </body>

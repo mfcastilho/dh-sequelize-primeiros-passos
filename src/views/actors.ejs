@@ -1,20 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Digital Movies - Atores</title>
-</head>
-<body>
-  <div class="container">
-    <h1>Digital Movies - Atores</h1>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <figure>
+      <img src="/img/logo-DH.png" alt="Logo Digital House" />
+    </figure>
+    <h1><%= title %></h1>
+    <h3 style="margin-bottom: 20px">Bem vindos a <%= title %></h3>
 
     <% actors.forEach(actor => { %>
-      <h4 class="actors-name" style="color: black;"><%= actor.name  %></h4>
-    <% }) %> 
-
-    
-  </div>
-</body>
+      
+    <h4 class="actors-name">
+     <strong>Nome do ator:</strong> <span style="font-weight: 300;"><%= actor.name %></span> 
+    </h4>
+    <% }) %>
+  </body>
 </html>

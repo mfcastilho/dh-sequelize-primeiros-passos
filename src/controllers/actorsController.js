@@ -9,12 +9,26 @@ const actorsController = {
   },
   showAllActors: async (req, res)=>{
    
-    console.log(Actor);
     const actors = await Actor.findAll();
+    return res.render("actors.ejs",{title: 'Digital Movies' , actors});
+  },
+  showActorsList: async (req, res)=>{
+    
+    const actors = await Actor.findAll();
+    return res.render("index.ejs",{title: 'Digital Movies' , actors});
+  },
+  showActor: async (req, res)=>{
+    const {id} = req.params
 
-    console.log(actors.name)
-    return res.render("actors.ejs",{actors});
- 
+    // const actor = await Actor.findOne({
+    //   where:{
+    //     id:id
+    //   }
+    // });
+
+    const actor = await Actor.findByPk(id);
+    
+    return res.render("showActor.ejs",{title: 'Digital Movies', actor});
   },
   getNameComplete:(req, res)=>{
 
