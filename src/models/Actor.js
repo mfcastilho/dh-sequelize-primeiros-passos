@@ -1,22 +1,22 @@
-
 module.exports = (sequelize, DataTypes) => {
-  const Actors = sequelize.define("Actors",
+  const Actor = sequelize.define(
+    'Actor',
     {
-      id:{
-        type:DataTypes.STRING,
+      id: {
+        type: DataTypes.STRING,
         primaryKey: true,
         allowNull: false
       },
-      name:{
+      name: {
         type: DataTypes.STRING,
         allowNull: false
       }
     },
     {
-      tableName: "actors",
+      tableName: 'actors',
       timestamps: false
     }
   )
 
-  return Actors;
+  return Actor;
 }
