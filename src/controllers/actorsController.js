@@ -15,19 +15,15 @@ const actorsController = {
   showActorsList: async (req, res)=>{
     
     const actors = await Actor.findAll();
+    console.log(Actor)
     return res.render("index.ejs",{title: 'Digital Movies' , actors});
   },
   showActor: async (req, res)=>{
-    const {id} = req.params
-
-    // const actor = await Actor.findOne({
-    //   where:{
-    //     id:id
-    //   }
-    // });
+    const {id} = req.params;
 
     const actor = await Actor.findByPk(id);
-    
+    console.log(actor.name);
+
     return res.render("showActor.ejs",{title: 'Digital Movies', actor});
   },
   getNameComplete:(req, res)=>{

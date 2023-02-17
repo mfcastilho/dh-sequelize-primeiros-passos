@@ -12,11 +12,13 @@
     <h3 style="margin-bottom: 20px;">Bem vindos a <%= title %></h3>
     
     <% if(typeof actors != "undefined"){ %>
-      <div style="margin-left: 1%;">
+      <div style="margin-left: 1.3%;">
         <ul>
           <% actors.forEach(actor =>{ %>
             <li>
-              <%= actor.name%>
+              <a href="/actors/<%= actor.id %> ">
+                <%= actor.name%>
+              </a>
             </li>
           <% }) %> 
         </ul>

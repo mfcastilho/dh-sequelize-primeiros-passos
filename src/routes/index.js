@@ -6,4 +6,6 @@ const actorsController = require("../controllers/actorsController");
 router.get('/', actorsController.showIndex);
 router.get('/actors/index', actorsController.showActorsList);
 
+router.get("/actors/:id", actorsController.showActor);
+
 module.exports = router;

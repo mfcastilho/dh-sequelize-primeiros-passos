@@ -2,18 +2,28 @@
 <html>
   <head>
     <title><%= title %></title>
-    <link rel='stylesheet' href='/css/style.css' />
+    <link rel="stylesheet" href="/css/style.css" />
   </head>
   <body>
     <figure>
-      <img src="/img/logo-DH.png" alt="Logo Digital House">
+      <img src="/img/logo-DH.png" alt="Logo Digital House" />
     </figure>
     <h1><%= title %></h1>
-    <h3 style="margin-bottom: 20px;">Bem vindos a <%= title %></h3>
-    
+    <h3 style="margin-bottom: 20px">Bem vindos a <%= title %></h3>
+
+    <h3 style="margin-bottom: 10px;">- Informações do Ator -</h3>
+
     <% if(typeof actor != "undefined"){ %>
-         <h3><%= actor.name %> </h3>
-    <% } %> 
+
+      <div style="margin-left: .8%;">
+        <h4 style="color: crimson">
+          Id:&nbsp;<span style="color: black"><%= actor.id %> </span>
+        </h4>
+        <h4 style="color: crimson">
+          Nome:&nbsp;<span style="color: black"><%= actor.name %> </span>
+        </h4>
+      </div>
    
+    <% } %>
   </body>
 </html>
