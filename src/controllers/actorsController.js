@@ -1,4 +1,4 @@
-const { Actor } = require("../models");
+const { Actor, Character } = require("../models");
 
 const actorsController = {
 
@@ -25,6 +25,9 @@ const actorsController = {
     console.log(actor.name);
 
     return res.render("showActor.ejs",{title: 'Digital Movies', actor});
+  },
+  searchActors:(req, res)=>{
+
   },
   getNameComplete:(req, res)=>{
 

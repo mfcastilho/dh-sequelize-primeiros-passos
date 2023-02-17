@@ -6,6 +6,6 @@ const actorsController = require("../controllers/actorsController");
 
 router.get("/actors", actorsController.showAllActors);
 
-// router.get("/actors/:id", actorsController.showActor);
+router.post("/actors/search", actorsController.searchActors)
 
 module.exports = router;
