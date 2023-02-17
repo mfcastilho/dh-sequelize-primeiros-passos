@@ -32,8 +32,8 @@ ActorsController@show, e retornar a view actors/show.ejs.
 > - [X] No ActorsController, utilizando Sequelize, obtemos o ator com base na ID que
 recebemos por URL. Salvar o ator na variável actor, e enviá-la a view. (É
 recomendável usar o método findByPk).
-> - [ ] Na visão de actors/show.ejs, usando EJS, exibir todos os dados do ator.
-> - [ ] Modificar a view dos actors/index.ejs para que o nome de cada ator seja um link
+> - [X] Na visão de actors/show.ejs, usando EJS, exibir todos os dados do ator.
+> - [X] Modificar a view dos actors/index.ejs para que o nome de cada ator seja um link
 para o detalhe dos dados do ator.
 
 - Mecanismo de busca:
