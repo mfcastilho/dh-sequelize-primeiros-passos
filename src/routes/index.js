@@ -8,4 +8,6 @@ router.get('/actors/index', actorsController.showActorsList);
 
 router.get("/actors/:id", actorsController.showActor);
 
+router.post("/actors/search", actorsController.searchActors);
+
 module.exports = router;
