@@ -38,10 +38,10 @@ para o detalhe dos dados do ator.
 
 - Mecanismo de busca:
 
-> - [ ] Na view dos actors/index.ejs, crie um formulário com apenas um campo de texto.
+> - [X] Na view dos actors/index.ejs, crie um formulário com apenas um campo de texto.
 O objetivo deste formulário será a busca de atores. (Observe que o formulário deve
 apontar o caminho /actors/search).
-> - [ ] Criar a rota /actors/search, que será redirecionado para o método
+> - [X] Criar a rota /actors/search, que será redirecionado para o método
 ActorsController@search, e retornar a view dos atores/index.ejs.
 > - [ ] No ActorsController, usando Sequelize, obtenha os atores cujo nome contém os
 personagens que você está procurando. Salvar os atores na variável actors, e
