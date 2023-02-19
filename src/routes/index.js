@@ -6,6 +6,8 @@ const actorsController = require("../controllers/actorsController");
 router.get('/', actorsController.showIndex);
 router.get('/actors/index', actorsController.showActorsList);
 
+router.post("/", actorsController.showIndex);
+
 router.get("/actors/:id", actorsController.showActor);
 
 router.post("/actors/search", actorsController.searchActors);
