@@ -43,7 +43,7 @@ O objetivo deste formulário será a busca de atores. (Observe que o formulário
 apontar o caminho /actors/search).
 > - [X] Criar a rota /actors/search, que será redirecionado para o método
 ActorsController@search, e retornar a view dos atores/index.ejs.
-> - [ ] No ActorsController, usando Sequelize, obtenha os atores cujo nome contém os
+> - [X] No ActorsController, usando Sequelize, obtenha os atores cujo nome contém os
 personagens que você está procurando. Salvar os atores na variável actors, e
 enviá-la para view. (Recomenda-se o uso do método where)
 > - [ ] Adicione aos actors/index.ejs um segundo formulário com um botão "Clear", que
