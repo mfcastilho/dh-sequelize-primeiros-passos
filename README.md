@@ -46,7 +46,7 @@ ActorsController@search, e retornar a view dos atores/index.ejs.
 > - [X] No ActorsController, usando Sequelize, obtenha os atores cujo nome contém os
 personagens que você está procurando. Salvar os atores na variável actors, e
 enviá-la para view. (Recomenda-se o uso do método where)
-> - [ ] Adicione aos actors/index.ejs um segundo formulário com um botão "Clear", que
+> - [X] Adicione aos actors/index.ejs um segundo formulário com um botão "Clear", que
 envia para o caminho original sem filtros de busca.
 > - [ ] Modificar os resultados da busca para mostrar a lista de atores ordenados por
 sobrenome.
